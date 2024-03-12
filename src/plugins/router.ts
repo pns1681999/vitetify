@@ -7,5 +7,12 @@ export function install(app: App) {
     history: createWebHistory(import.meta.env.BASE_URL),
     extendRoutes: routes => setupLayouts(routes),
   })
+  router.beforeEach(() => {
+    startProgress()
+  })
+
+  router.afterEach(() => {
+    doneProgress()
+  })
   app.use(router)
 }
