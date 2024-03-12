@@ -8,6 +8,7 @@
     "dev:stag": "vite --port 3333 --open --mode stag",
     "dev:prod": "vite --port 3333 --open --mode prod",
     "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "typecheck": "vue-tsc --noEmit",
     "preview": "vite preview"
   },
