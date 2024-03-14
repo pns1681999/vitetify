@@ -1,2 +1,19 @@
 app:
   question: What is your name?
+auth:
+  validateEmailEmpty: Email cannot be empty
+  validateEmailInvalid: Invalid email
+  validatePasswordEmpty: Password cannot be empty
+  password: Password
+  logout: Logout
+  validateUsernameEmpty: Username cannot be empty
+  username: Username
+  login: Login
+nav:
+  user: User
+  management: Management
+  staff: Staff
+learn: Managenent
+error:
+  '404': This page you are looking for could not be found.
+  goback: Go back to Home

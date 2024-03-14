@@ -7,6 +7,17 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AppBar: typeof import('./../components/AppBar.vue')['default']
+    AppBarAccount: typeof import('./../components/app/bar/Account.vue')['default']
+    AppBarAvatar: typeof import('./../components/app/bar/Avatar.vue')['default']
+    AppBarBar: typeof import('./../components/app/bar/Bar.vue')['default']
+    AppBarLogo: typeof import('./../components/app/bar/Logo.vue')['default']
+    AppBarManager: typeof import('./../components/app/bar/Manager.vue')['default']
+    AppBtn: typeof import('./../components/app/Btn.vue')['default']
+    AppListLinkListItem: typeof import('./../components/app/list/LinkListItem.vue')['default']
+    AppListList: typeof import('./../components/app/list/List.vue')['default']
+    AppMenu: typeof import('./../components/app/Menu.vue')['default']
+    AppSheet: typeof import('./../components/app/Sheet.vue')['default']
     CommonTheFooter: typeof import('./../components/common/TheFooter.vue')['default']
     CommonTheInput: typeof import('./../components/common/TheInput.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

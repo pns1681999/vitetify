@@ -6,6 +6,9 @@
 export {}
 declare global {
   const $api: typeof import('../hooks/http-client')['$api']
+  const $route: typeof import('../hooks/enhancer')['$route']
+  const $router: typeof import('../hooks/enhancer')['$router']
+  const $toast: typeof import('../hooks/toast')['$toast']
   const EffectScope: typeof import('vue')['EffectScope']
   const acceptHMRUpdate: typeof import('pinia')['acceptHMRUpdate']
   const asyncComputed: typeof import('@vueuse/core')['asyncComputed']
@@ -37,6 +40,7 @@ declare global {
   const doneProgress: typeof import('../hooks/progress')['doneProgress']
   const eagerComputed: typeof import('@vueuse/core')['eagerComputed']
   const effectScope: typeof import('vue')['effectScope']
+  const errorHandle: typeof import('../hooks/http-client')['errorHandle']
   const extendRef: typeof import('@vueuse/core')['extendRef']
   const getActivePinia: typeof import('pinia')['getActivePinia']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
@@ -98,6 +102,8 @@ declare global {
   const resolveComponent: typeof import('vue')['resolveComponent']
   const resolveRef: typeof import('@vueuse/core')['resolveRef']
   const resolveUnref: typeof import('@vueuse/core')['resolveUnref']
+  const route: typeof import('../hooks/enhancer')['route']
+  const router: typeof import('../hooks/enhancer')['router']
   const setActivePinia: typeof import('pinia')['setActivePinia']
   const setLocale: typeof import('../hooks/lang')['setLocale']
   const setMapStoreSuffix: typeof import('pinia')['setMapStoreSuffix']
@@ -117,6 +123,7 @@ declare global {
   const toRef: typeof import('vue')['toRef']
   const toRefs: typeof import('vue')['toRefs']
   const toValue: typeof import('vue')['toValue']
+  const toast: typeof import('../hooks/toast')['toast']
   const toggleDark: typeof import('../hooks/dark')['toggleDark']
   const triggerRef: typeof import('vue')['triggerRef']
   const tryOnBeforeMount: typeof import('@vueuse/core')['tryOnBeforeMount']
@@ -318,6 +325,7 @@ declare module 'vue' {
   interface GlobalComponents {}
   interface ComponentCustomProperties {
     readonly $api: UnwrapRef<typeof import('../hooks/http-client')['$api']>
+    readonly $toast: UnwrapRef<typeof import('../hooks/toast')['$toast']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
     readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
@@ -349,6 +357,7 @@ declare module 'vue' {
     readonly doneProgress: UnwrapRef<typeof import('../hooks/progress')['doneProgress']>
     readonly eagerComputed: UnwrapRef<typeof import('@vueuse/core')['eagerComputed']>
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
+    readonly errorHandle: UnwrapRef<typeof import('../hooks/http-client')['errorHandle']>
     readonly extendRef: UnwrapRef<typeof import('@vueuse/core')['extendRef']>
     readonly getActivePinia: UnwrapRef<typeof import('pinia')['getActivePinia']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
@@ -622,6 +631,7 @@ declare module '@vue/runtime-core' {
   interface GlobalComponents {}
   interface ComponentCustomProperties {
     readonly $api: UnwrapRef<typeof import('../hooks/http-client')['$api']>
+    readonly $toast: UnwrapRef<typeof import('../hooks/toast')['$toast']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
     readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
@@ -653,6 +663,7 @@ declare module '@vue/runtime-core' {
     readonly doneProgress: UnwrapRef<typeof import('../hooks/progress')['doneProgress']>
     readonly eagerComputed: UnwrapRef<typeof import('@vueuse/core')['eagerComputed']>
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
+    readonly errorHandle: UnwrapRef<typeof import('../hooks/http-client')['errorHandle']>
     readonly extendRef: UnwrapRef<typeof import('@vueuse/core')['extendRef']>
     readonly getActivePinia: UnwrapRef<typeof import('pinia')['getActivePinia']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>

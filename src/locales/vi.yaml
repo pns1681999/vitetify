@@ -1,2 +1,18 @@
 app:
   question: Tên bạn là gì?
+auth:
+  validateEmailEmpty: Email không được để trống
+  validateEmailInvalid: Email không hợp lệ
+  validatePasswordEmpty: Mật khẩu không được để trống
+  password: Mật khẩu
+  logout: Đăng xuất
+  validateUsernameEmpty: Tên tài khoản không được để trống
+  username: Tài khoản
+  login: Đăng nhập
+nav:
+  management: Nhân sự
+  staff: Nhân viên
+  user: Khách hàng
+error:
+  '404': Không tìm thấy trang
+  goback: Trở về trang chủ
