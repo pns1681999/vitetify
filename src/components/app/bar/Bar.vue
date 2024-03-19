@@ -1,9 +1,8 @@
 <template>
   <v-app-bar flat border="b">
-    <template #prepend>
+    <v-container class="app-max-width w-full flex flex-row flex-nowrap items-center">
       <app-bar-logo />
-    </template>
-    <template #append>
+      <v-spacer />
       <app-bar-account />
       <v-divider
         class="mx-2 my-auto border-gray-800"
@@ -12,6 +11,6 @@
         vertical
       />
       <app-bar-avatar />
-    </template>
+    </v-container>
   </v-app-bar>
 </template>

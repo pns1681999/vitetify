@@ -16,6 +16,7 @@
     "@vee-validate/zod": "^4.12.6",
     "@vueuse/core": "^10.9.0",
     "@vueuse/integrations": "^10.9.0",
+    "dayjs": "^1.11.10",
     "defu": "^6.1.4",
     "jwt-decode": "3.1.2",
     "nprogress": "^0.2.0",

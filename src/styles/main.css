@@ -14,3 +14,8 @@ body,
 .fade-leave-active {
   transition: opacity 0.1s ease-out;
 }
+
+.app-max-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}

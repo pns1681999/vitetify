@@ -17,3 +17,32 @@ learn: Managenent
 error:
   '404': This page you are looking for could not be found.
   goback: Go back to Home
+table:
+  loading: Loading...
+search: Search
+status: Status
+fullname: Full name
+client: User
+contact: Contact
+dob: Date of birth
+createdAt: Created at
+all: All
+active: Active
+de-active: De-active
+action: Action
+tool:
+  edit: Edit
+  delete: Delete
+  log: User log
+createUser: Create user
+userProfile: User profile
+gender: Gender
+male: Male
+female: Female
+close: Close
+create: Create
+indicatesRequiredField: indicates required field
+telephone: Telephone
+clinic: Clinic
+createAfter: Create after
+createBefore: Create before

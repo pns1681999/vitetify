@@ -1,5 +1,7 @@
+<script setup lang="ts">
+import { UserList } from '@/features/user'
+</script>
+
 <template>
-  <div>
-    User list
-  </div>
+  <UserList />
 </template>

@@ -9,7 +9,9 @@ declare global {
   const $route: typeof import('../hooks/enhancer')['$route']
   const $router: typeof import('../hooks/enhancer')['$router']
   const $toast: typeof import('../hooks/toast')['$toast']
+  const AccountStatus: typeof import('../hooks/enum')['AccountStatus']
   const EffectScope: typeof import('vue')['EffectScope']
+  const PatientStatus: typeof import('../hooks/enum')['PatientStatus']
   const acceptHMRUpdate: typeof import('pinia')['acceptHMRUpdate']
   const asyncComputed: typeof import('@vueuse/core')['asyncComputed']
   const autoResetRef: typeof import('@vueuse/core')['autoResetRef']
@@ -42,6 +44,7 @@ declare global {
   const effectScope: typeof import('vue')['effectScope']
   const errorHandle: typeof import('../hooks/http-client')['errorHandle']
   const extendRef: typeof import('@vueuse/core')['extendRef']
+  const formatDate: typeof import('../hooks/format')['formatDate']
   const getActivePinia: typeof import('pinia')['getActivePinia']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
@@ -359,6 +362,7 @@ declare module 'vue' {
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
     readonly errorHandle: UnwrapRef<typeof import('../hooks/http-client')['errorHandle']>
     readonly extendRef: UnwrapRef<typeof import('@vueuse/core')['extendRef']>
+    readonly formatDate: UnwrapRef<typeof import('../hooks/format')['formatDate']>
     readonly getActivePinia: UnwrapRef<typeof import('pinia')['getActivePinia']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
@@ -665,6 +669,7 @@ declare module '@vue/runtime-core' {
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
     readonly errorHandle: UnwrapRef<typeof import('../hooks/http-client')['errorHandle']>
     readonly extendRef: UnwrapRef<typeof import('@vueuse/core')['extendRef']>
+    readonly formatDate: UnwrapRef<typeof import('../hooks/format')['formatDate']>
     readonly getActivePinia: UnwrapRef<typeof import('pinia')['getActivePinia']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>

@@ -65,7 +65,3 @@ function go() {
     </div>
   </div>
 </template>
-
-<route lang="yaml">
-  redirect: /hi/user
-</route>

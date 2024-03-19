@@ -16,3 +16,31 @@ nav:
 error:
   '404': Không tìm thấy trang
   goback: Trở về trang chủ
+table:
+  loading: Đang tải...
+search: Tìm kiếm
+status: Trạng thái
+fullname: Họ tên
+contact: Liên lạc
+dob: Ngày sinh
+createdAt: Ngày tạo
+all: Tất cả
+active: Hoạt động
+de-active: Không hoạt động
+action: Công cụ
+tool:
+  edit: Chỉnh sửa
+  delete: Xóa
+  log: Lịch sử
+createUser: Thêm khách hàng
+userProfile: Thông tin khách hàng
+gender: Giới tính
+male: Nam
+female: Nữ
+close: Hủy
+create: Tạo mới
+indicatesRequiredField: thông tin bắt buộc
+telephone: Số điện thoại
+clinic: Phòng khám
+createAfter: Tạo sau
+createBefore: Tạo trước

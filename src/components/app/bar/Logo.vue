@@ -7,7 +7,7 @@ defineProps({
 <template>
   <router-link
     to="/"
-    class="d-inline-block me-2 ms-4"
+    class="d-inline-block"
   >
     <v-img
       key="logo"
